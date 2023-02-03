@@ -15,6 +15,12 @@ class CreateKnjigasTable extends Migration
     {
         Schema::create('knjigas', function (Blueprint $table) {
             $table->id();
+            $table->string('naziv');
+            $table->integer('godIzdanja');
+            $table->foreignId('zanr');
+            $table->foreignId('autor');
+ 
+
             $table->timestamps();
         });
     }

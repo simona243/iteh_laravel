@@ -12,6 +12,7 @@ class Autor extends Model
         'ime',
         'prezime',
         'datumRodj',
+        'mestoRodj'
     ];
 
 
