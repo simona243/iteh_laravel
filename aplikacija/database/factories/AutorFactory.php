@@ -14,7 +14,11 @@ class AutorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'ime' => $this->faker->firstName(),
+            'prezime' => $this->faker->lastName(),
+            'datumRodj' => $this->faker->date($format = 'Y-m-d', $max = 'now') ,
+            'mestoRodj' => $this->faker->city(),
+      
         ];
     }
 }
